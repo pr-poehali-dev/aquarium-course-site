@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+
 import Icon from "@/components/ui/icon";
 
 const LEVELS = [
@@ -155,6 +156,7 @@ export default function Courses() {
                   background: level.color,
                   color: "#060d1a",
                 }}
+                onClick={() => navigate(`/payment/${level.id}`)}
               >
                 Записаться
               </button>
