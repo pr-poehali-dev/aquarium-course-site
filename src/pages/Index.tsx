@@ -18,9 +18,7 @@ const LEVELS = [
     emoji: "🌱",
     title: "Начинающий",
     subtitle: "С нуля до первого аквариума",
-    duration: "8 недель",
-    lessons: 16,
-    price: "12 900 ₽",
+    price: "250 ₽",
     color: "#2dd485",
     topics: [
       "Выбор и запуск аквариума",
@@ -37,9 +35,7 @@ const LEVELS = [
     emoji: "🐠",
     title: "Средний",
     subtitle: "Углублённые знания и навыки",
-    duration: "10 недель",
-    lessons: 20,
-    price: "18 900 ₽",
+    price: "450 ₽",
     color: "#2d9dd4",
     topics: [
       "Акваскейпинг: принципы и стили",
@@ -56,9 +52,7 @@ const LEVELS = [
     emoji: "🦈",
     title: "Продвинутый",
     subtitle: "Мастерство и профессионализм",
-    duration: "12 недель",
-    lessons: 24,
-    price: "26 900 ₽",
+    price: "700 ₽",
     color: "#9d2dd4",
     topics: [
       "Конкурсный акваскейпинг",
@@ -297,22 +291,7 @@ export default function Index() {
             </a>
           </div>
 
-          <div className="grid grid-cols-3 gap-8 mt-20 max-w-xl mx-auto">
-            {[
-              { num: "500+", label: "Выпускников" },
-              { num: "3", label: "Уровня обучения" },
-              { num: "97%", label: "Довольных студентов" },
-            ].map((stat) => (
-              <div key={stat.label} className="text-center">
-                <div className="font-display text-3xl md:text-4xl font-bold" style={{ color: "var(--water-glow)" }}>
-                  {stat.num}
-                </div>
-                <div className="font-body text-xs mt-1" style={{ color: "rgba(196, 242, 248, 0.55)" }}>
-                  {stat.label}
-                </div>
-              </div>
-            ))}
-          </div>
+
         </div>
 
         <div className="absolute bottom-0 left-0 right-0">
@@ -335,7 +314,7 @@ export default function Index() {
                 <br />с искусством
               </h2>
               <p className="font-body text-base leading-relaxed mb-8" style={{ color: "rgba(196, 242, 248, 0.7)" }}>
-                AquaSchool — первая в России онлайн-школа аквариумистики с системным подходом к обучению.
+                AquaSchool — онлайн-школа аквариумистики с системным подходом к обучению.
                 Мы объединяем биологию, дизайн и инженерию в единую образовательную программу.
               </p>
               <div className="grid grid-cols-2 gap-4">
@@ -371,15 +350,7 @@ export default function Index() {
                   style={{ background: "linear-gradient(135deg, rgba(0,200,212,0.1), transparent)" }}
                 />
               </div>
-              <div
-                className="absolute -bottom-6 -right-6 glass-card rounded-2xl p-5"
-                style={{ border: "1px solid rgba(0, 200, 212, 0.25)" }}
-              >
-                <div className="font-display text-3xl font-bold" style={{ color: "var(--water-glow)" }}>8 лет</div>
-                <div className="font-body text-sm mt-1" style={{ color: "rgba(196, 242, 248, 0.6)" }}>
-                  на рынке образования
-                </div>
-              </div>
+
             </div>
           </div>
         </div>
@@ -446,33 +417,13 @@ export default function Index() {
                 Глубокое погружение в тему на практических занятиях с опытными преподавателями.
               </p>
 
-              <div className="grid grid-cols-2 gap-4 mb-8">
-                {[
-                  { label: "Длительность", value: activeData.duration },
-                  { label: "Занятий", value: `${activeData.lessons} уроков` },
-                ].map((item) => (
-                  <div
-                    key={item.label}
-                    className="p-4 rounded-xl"
-                    style={{ background: "rgba(0,200,212,0.06)", border: "1px solid rgba(0,200,212,0.1)" }}
-                  >
-                    <div className="font-body text-xs mb-1" style={{ color: "rgba(196,242,248,0.5)" }}>
-                      {item.label}
-                    </div>
-                    <div className="font-display text-xl font-semibold" style={{ color: activeData.color }}>
-                      {item.value}
-                    </div>
-                  </div>
-                ))}
-              </div>
+
 
               <div className="mb-8">
                 <div className="font-display text-3xl font-bold" style={{ color: "#fff" }}>
                   {activeData.price}
                 </div>
-                <div className="font-body text-sm mt-1" style={{ color: "rgba(196,242,248,0.5)" }}>
-                  или от 2 150 ₽/мес в рассрочку
-                </div>
+
               </div>
 
               <button className="btn-primary">
