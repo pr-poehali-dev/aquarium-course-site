@@ -126,12 +126,12 @@ const REVIEWS = [
 ];
 
 const GALLERY_ITEMS = [
-  { title: "Природный биотоп «Амазонка»", author: "Выпускник Игорь П.", category: "Пресноводный" },
-  { title: "Голландский стиль 200L", author: "Выпускница Анна В.", category: "Травник" },
-  { title: "Рифовая система", author: "Выпускник Сергей М.", category: "Морской" },
-  { title: "Iwagumi — камни и мох", author: "Выпускница Ольга Т.", category: "Акваскейп" },
-  { title: "Детский аквариум", author: "Выпускница Мария К.", category: "Пресноводный" },
-  { title: "Нано-акваскейп 30L", author: "Выпускник Павел Р.", category: "Нано" },
+  { title: "Природный биотоп «Амазонка»", author: "Выпускник Игорь П.", category: "Пресноводный", img: "https://cdn.poehali.dev/projects/e8a58061-1ffd-40e3-bf1f-939471e999b7/files/d93b0db8-ebe6-4467-a7a9-7ec59c052994.jpg" },
+  { title: "Голландский стиль 200L", author: "Выпускница Анна В.", category: "Травник", img: "https://cdn.poehali.dev/projects/e8a58061-1ffd-40e3-bf1f-939471e999b7/files/75599e29-29c1-4b5a-916e-2933d6ff4869.jpg" },
+  { title: "Рифовая система", author: "Выпускник Сергей М.", category: "Морской", img: "https://cdn.poehali.dev/projects/e8a58061-1ffd-40e3-bf1f-939471e999b7/files/4beca2a3-c1f1-4100-aaa4-7a507da52878.jpg" },
+  { title: "Iwagumi — камни и мох", author: "Выпускница Ольга Т.", category: "Акваскейп", img: "https://cdn.poehali.dev/projects/e8a58061-1ffd-40e3-bf1f-939471e999b7/files/ef6faa8e-430b-46d2-a6fa-2651936c53f9.jpg" },
+  { title: "Детский аквариум", author: "Выпускница Мария К.", category: "Пресноводный", img: "https://cdn.poehali.dev/projects/e8a58061-1ffd-40e3-bf1f-939471e999b7/files/a0e84186-76c7-41c4-98bd-1b15c54d50e7.jpg" },
+  { title: "Нано-акваскейп 30L", author: "Выпускник Павел Р.", category: "Нано", img: "https://cdn.poehali.dev/projects/e8a58061-1ffd-40e3-bf1f-939471e999b7/files/35118384-5d61-4138-b1a3-aa84066a32e4.jpg" },
 ];
 
 function Bubbles() {
@@ -611,7 +611,7 @@ export default function Index() {
                 }}
               >
                 <img
-                  src={HERO_IMAGE}
+                  src={item.img}
                   alt={item.title}
                   className="w-full h-full object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-500"
                 />
