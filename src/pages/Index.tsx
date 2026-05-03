@@ -423,6 +423,9 @@ export default function Index() {
                 <div className="font-display text-3xl font-bold" style={{ color: "#fff" }}>
                   {activeData.price}
                 </div>
+                <div className="font-body text-sm mt-1" style={{ color: "rgba(196,242,248,0.5)" }}>
+                  за урок
+                </div>
 
               </div>
 
