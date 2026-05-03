@@ -524,9 +524,9 @@ export default function Index() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="flex justify-center">
             {TEACHERS.map((teacher) => (
-              <div key={teacher.name} className="glass-card rounded-2xl p-8 text-center">
+              <div key={teacher.name} className="glass-card rounded-2xl p-8 text-center w-full max-w-sm">
                 <div
                   className="w-20 h-20 rounded-full mx-auto mb-6 flex items-center justify-center text-4xl"
                   style={{
