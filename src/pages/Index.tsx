@@ -518,12 +518,9 @@ export default function Index() {
       <section id="teachers" className="py-28 relative z-10">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <p className="font-body text-sm uppercase tracking-widest mb-4" style={{ color: "var(--water-glow)" }}>
-              Команда
-            </p>
             <h2 className="font-display text-5xl md:text-6xl font-light" style={{ color: "#fff" }}>
-              Ваши{" "}
-              <span className="italic" style={{ color: "var(--water-surface)" }}>проводники</span>
+              Ваш{" "}
+              <span className="italic" style={{ color: "var(--water-surface)" }}>преподаватель</span>
             </h2>
           </div>
 
