@@ -571,9 +571,6 @@ export default function Index() {
       <section id="gallery" className="py-28 relative z-10">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <p className="font-body text-sm uppercase tracking-widest mb-4" style={{ color: "var(--water-glow)" }}>
-              Работы выпускников
-            </p>
             <h2 className="font-display text-5xl md:text-6xl font-light" style={{ color: "#fff" }}>
               Галерея{" "}
               <span className="italic" style={{ color: "var(--water-surface)" }}>шедевров</span>
@@ -602,17 +599,11 @@ export default function Index() {
                 />
                 <div className="absolute bottom-0 left-0 right-0 p-4">
                   <span
-                    className="inline-block px-2 py-0.5 rounded text-xs font-body mb-2"
+                    className="inline-block px-2 py-0.5 rounded text-xs font-body"
                     style={{ background: "rgba(0,200,212,0.2)", color: "var(--water-surface)" }}
                   >
                     {item.category}
                   </span>
-                  <div className="font-display text-base font-semibold mb-1" style={{ color: "#fff" }}>
-                    {item.title}
-                  </div>
-                  <div className="font-body text-xs" style={{ color: "rgba(196,242,248,0.5)" }}>
-                    {item.author}
-                  </div>
                 </div>
               </div>
             ))}
