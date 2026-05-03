@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import Icon from "@/components/ui/icon";
 
 const HERO_IMAGE = "https://cdn.poehali.dev/projects/e8a58061-1ffd-40e3-bf1f-939471e999b7/files/f57723b9-029f-4424-a02e-5bd8cf84f692.jpg";
@@ -159,6 +160,7 @@ function WaterWave() {
 }
 
 export default function Index() {
+  const navigate = useNavigate();
   const [activeLevel, setActiveLevel] = useState("beginner");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -278,7 +280,7 @@ export default function Index() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button className="btn-primary text-base">
+            <button className="btn-primary text-base" onClick={() => navigate("/courses")}>
               <span>Начать обучение</span>
             </button>
             <a
